@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Banasthali</title>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="50" height="50" rx="25" fill="url(#pattern0)" />
+                <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0"
+                            transform="translate(-0.423313 -0.142857) scale(0.00613497 0.00600775)" />
+                    </pattern>
+                    <image id="image0" width="300" height="215"
+                        xlink:href="data:image/jpeg;base64,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" />
+                </defs>
+            </svg>
+        </ul>
+        <a class="navbar-brand mr-auto" href="#" style="font-weight: bold;color: #2F516B;margin-left: 10px;">Banasthali
+            Vidyapith</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0" type="submit"
+                    style="color: #2F516B; border-color: #2F516B;">Search</button>
+            </form>
+        </div>
+    </nav>
+    <nav id="nav" class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color:  #2F516B;">
+        <a class="navbar-brand" href="#page1">News</a>
+        <a class="navbar-brand" href="#page2">Events</a>
+        <a class="navbar-brand" href="#page3">Academics</a>
+        <a class="navbar-brand" href="#page4">Campus Life</a>
+        <a class="navbar-brand" href="#page5">Admission</a>
+        <a class="navbar-brand" href="#page6">About Us</a>
+        </div>
+    </nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pic1.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <div data-spy="scroll" data-target="#nav" data-offset="0">
+        <div id="page1" style="padding-left: 20px; padding-right: 20px;padding-top: 50px; padding-bottom: 50px;">
+            <h1 style="font-weight: bold;text-align: center;color: black;font-size: xxx-large;margin-left: auto;">
+                Banasthali News</h1>
+            <h2
+                style="text-align: center;color: black;font-size: x-large;margin-left: auto; margin-bottom: 50px;margin-top: 20px;">
+                Latest Happenings In Banasthali Vidyapith</h2>
+            <div class="row row-cols-1 row-cols-md-2" style="padding: 15px;">
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">COMMUNITY</h5>
+                            <p class="card-text" style="font-size: large;"><b>11 lakhs donated to the CM Covid-19 relief
+                                    fund by Banasthali Vidyapith.</b></p>
+                            <p class="card-text">
+                                <a class="text-muted" href="#">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">RATINGS AND AWARDS</h5>
+                            <p class="card-text" style="font-size: large;"><b>Banasthali Vidyapith accredited with A++
+                                    grade, the highest in Rajasthan.</b></p>
+                            <p class="card-text">
+                                <a class="text-muted" href="#">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">PARTNER INSTITUTIONS</h5>
+                            <p class="card-text" style="font-size: large;"><b>International Exchange Scholarship holders
+                                    for
+                                    the year 2020 announced.</b></p>
+                            <p class="card-text">
+                                <a class="text-muted" href="#">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">ENTREPRENEURSHIP</h5>
+                            <p class="card-text" style="font-size: large;"><b>Banasthali’s Atal Incubation Centre to
+                                    host a
+                                    lineup of workshops this week.</b></p>
+                            <p class="card-text">
+                                <a class="text-muted" href="#">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button type="button" class="btn btn-primary btn-lg"
+                    style="background-color: #2F516B;border-radius: 0; margin-top: 20px; padding-left: 10%; padding-right: 10%;">More
+                    News</button>
+            </div>
+        </div>
+        <div id="page2"
+            style="padding-left: 20px; padding-right: 20px; background-color: #D9D9D9;padding-top: 50px;padding-bottom: 50px;">
+            <h1 style="font-weight: bold;text-align: center;color: black;font-size: xxx-large;margin-left: auto;">
+                Banasthali Events</h1>
+            <h2
+                style="text-align: center;color: black;font-size: x-large;margin-left: auto; margin-bottom: 50px;margin-top: 20px;">
+                What's Happening On Campus</h2>
+            <div class="row row-cols-1 row-cols-md-4" style="padding: 15px;">
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">GUEST LECTURE</h5>
+                            <p class="card-text" style="font-size: large;"><b>Nobel Peace Laureate Mr. Kailash Satyarthi
+                                    visits Banasthali.</b></p>
+                            <p class="card-text">
+                                <a class="text-muted" href="#">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">NOTICE</h5>
+                            <p class="card-text" style="font-size: large;"><b>Online classes schedule and guidelines are
+                                    as
+                                    follows..</b></p>
+                            <p class="card-text">
+                                <a class="text-muted" href="#">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">RESULTS</h5>
+                            <p class="card-text" style="font-size: large;"><b>Semester Exam, Certificate courses results
+                                    out.</b></p>
+                            <p class="card-text">
+                                <a class="text-muted" href="#">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">FESTS</h5>
+                            <p class="card-text" style="font-size: large;"><b>National Technical Fest, Mayukh’20 dates
+                                    announced.</b></p>
+                            <p class="card-text">
+                                <a class="text-muted" href="#">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button type="button" class="btn btn-primary btn-lg"
+                    style="background-color: #2F516B; border-radius: 0; margin-top: 20px; padding-left: 10%; padding-right: 10%;">More
+                    Events</button>
+            </div>
+        </div>
+        <div id="page3" style="padding-left: 20px; padding-right: 20px;padding-top: 50px; padding-bottom: 50px;">
+            <h1 style="font-weight: bold;text-align: center;color: black;font-size: xxx-large;margin-left: auto;">
+                Academics</h1>
+            <h2
+                style="text-align: center;color: black;font-size: x-large;margin-left: auto; margin-bottom: 50px;margin-top: 20px;">
+                Producing Future Leaders</h2>
+            <div style="padding: 15px;">
+                <div class="row row-cols-md-2">
+                    <div class="col mb-4">
+                        <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 h-100  d-none d-md-block"
+                                    style="background-size:cover; background-image: url(pic10.JPG);"></div>
+                                <div class="col-md-8 h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #2F516B;"><b>SCHOOL EDUCATION</b></h5>
+                                        <p class="card-text">Banasthali Vidyapith provides world-class primary and
+                                            secondary
+                                            education to both boys and girls along with on-campus hostel facilities.</p>
+                                        <p class="card-text">
+                                            <a class="text-muted" href="#">Know More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 h-100  d-none d-md-block"
+                                    style="background-size:cover; background-image: url(pic11.JPG);"></div>
+                                <div class="col-md-8 h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #2F516B;"><b>UNDERGRADUATE EDUCATION</b>
+                                        </h5>
+                                        <p class="card-text">Banasthali Vidyapith offers courses from a wide range of
+                                            disciplines with the vision of women empowerment.</p>
+                                        <p class="card-text">
+                                            <a class="text-muted" href="#">Know More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-md-2">
+                    <div class="col mb-4">
+                        <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 h-100  d-none d-md-block"
+                                    style="background-size:cover; background-image: url(pic12.JPG);"></div>
+                                <div class="col-md-8 h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #2F516B;"><b>GRADUATE EDUCATION</b></h5>
+                                        <p class="card-text">Banasthali Vidyapith offers courses from a wide range of
+                                            disciplines with the vision of women empowerment.</p>
+                                        <p class="card-text">
+                                            <a class="text-muted" href="#">Know More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                            <div class="row no-gutters">
+                                <div class="col-md-4 h-100  d-none d-md-block"
+                                    style="background-size:cover; background-image: url(pic13.JPG);"></div>
+                                <div class="col-md-8 h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color: #2F516B;"><b>RESEARCH FELLOWSHIPS</b></h5>
+                                        <p class="card-text">Banasthali Vidyapith has a long list of research work being
+                                            done on its premises. Application dates for the program to be announced
+                                            soon.
+                                        </p>
+                                        <p class="card-text">
+                                            <a class="text-muted" href="#">Know More</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button type="button" class="btn btn-primary btn-lg"
+                    style="background-color: #2F516B; border-radius: 0; margin-top: 20px; padding-left: 10%; padding-right: 10%;">Explore
+                    Course Catalogue</button>
+            </div>
+        </div>
+        <div id="page4"
+            style="padding-left: 20px; padding-right: 20px; background-color: #D9D9D9;padding-top: 50px;padding-bottom: 50px;">
+            <h1 style="font-weight: bold;text-align: center;color: black;font-size: xxx-large;margin-left: auto;">
+                Campus Life</h1>
+            <h2
+                style="text-align: center;color: black;font-size: x-large;margin-left: auto; margin-bottom: 50px;margin-top: 20px;">
+                <i>
+                    "Simple living, high thinking"</i></h2>
+            <div class="row row-cols-1 row-cols-md-4" style="padding: 15px;">
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic14.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>HORSE RIDING</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic16.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>AVIATION</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic15.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>INDIAN VALUES</b></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic17.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>SHOOTING</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic18.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>FURNISHED ROOMS</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic19.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>CANTEENS</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic20.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>MODERN LABS</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic21.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>BANASTHALI RADIO</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic22.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>STUDENT CLUBS</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic23.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>MULTIPLE LIBRARIES</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic24.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>FESTS</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic25.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>ENTREPRENEURSHIP</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic26.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>NCC</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic27.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>SWIMMING</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic28.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>GYM</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic29.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: large; text-align: center;"><b>MARKETS</b></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button type="button" class="btn btn-primary btn-lg"
+                    style="background-color: #2F516B; border-radius: 0; margin-top: 20px; padding-left: 10%; padding-right: 10%;">And
+                    Much More</button>
+            </div>
+        </div>
+        <div id="page5" style="padding-left: 20px; padding-right: 20px;padding-top: 50px; padding-bottom: 50px;">
+            <h1 style="font-weight: bold;text-align: center;color: black;font-size: xxx-large;margin-left: auto;">
+                Academics</h1>
+            <h2
+                style="text-align: center;color: black;font-size: x-large;margin-left: auto; margin-bottom: 50px;margin-top: 20px;">
+                Become The Extraordinary</h2>
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="10000">
+                        <img src="pic30.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption" style="background: rgba(0, 0, 0, 0.5);">
+                            <h5><i>"If I had been a girl I would have come to Banasthali for my education"
+                                </i></h5>
+                            <p><b>- Pandit Nehru (1945)</b></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="2000">
+                        <img src="pic31.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption" style="background: rgba(0, 0, 0, 0.5);">
+                            <h5><i>"Banasthali is enshrined in my heart"</i></h5>
+                            <p><b>- Mahatma Gandhi (1946)</b></p>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div style="display: flex; justify-content: center; margin-top: 30px;">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-lg btn-secondary"
+                                style="margin-top: 5px; background-color: #2F516B;border-radius: 0;">Important
+                                Dates</button>
+                        </div>
+                        <div class="btn-group mr-2" role="group" aria-label="Second group">
+                            <button type="button" class="btn btn-lg btn-secondary"
+                                style="margin-top: 5px;background-color: #2F516B;border-radius: 0;">School
+                                Admission</button>
+                        </div>
+                        <div class="btn-group mr-2" role="group" aria-label="Third group">
+                            <button type="button" class="btn btn-lg btn-secondary"
+                                style="margin-top: 5px;background-color: #2F516B;border-radius: 0;">College
+                                Admission</button>
+                        </div>
+                        <div class="btn-group" role="group" aria-label="Fourth group">
+                            <button type="button" class="btn btn-lg btn-secondary"
+                                style="margin-top: 5px;background-color: #2F516B;border-radius: 0;">Campus Tour</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page6"
+            style="padding-left: 20px; padding-right: 20px; background-color: #D9D9D9;padding-top: 50px;padding-bottom: 50px;">
+            <h1 style="font-weight: bold;text-align: center;color: black;font-size: xxx-large;margin-left: auto;">
+                About Us</h1>
+            <h2
+                style="text-align: center;color: black;font-size: x-large;margin-left: auto; margin-bottom: 50px;margin-top: 20px;">
+                Meet Our Alumni</h2>
+            <div class="row row-cols-1 row-cols-md-4" style="padding: 15px;">
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic32.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">AVANI CHATURVEDI</h5>
+                            <p class="card-text" style="font-size: large;"><b>First woman combat pilot of India</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic33.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">KAMLA BENIWAL</h5>
+                            <p class="card-text" style="font-size: large;"><b>Governor of Gujarat</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic34.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">MEIRA KUMAR</h5>
+                            <p class="card-text" style="font-size: large;"><b>Speaker of Lok Sabha</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                        <img src="pic35.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:  #2F516B;">ANURADHA BHATTACHARYYA</h5>
+                            <p class="card-text" style="font-size: large;"><b>Writer and Poet</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 30px;">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-lg btn-secondary"
+                            style="margin-top: 5px; background-color: #2F516B;border-radius: 0;">History and
+                            Culture</button>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="Second group">
+                        <button type="button" class="btn btn-lg btn-secondary"
+                            style="margin-top: 5px;background-color: #2F516B;border-radius: 0;">Vision and
+                            Mission</button>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="Third group">
+                        <button type="button" class="btn btn-lg btn-secondary"
+                            style="margin-top: 5px;background-color: #2F516B;border-radius: 0;">Panchmukhi
+                            Shiksha</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Fourth group">
+                        <button type="button" class="btn btn-lg btn-secondary"
+                            style="margin-top: 5px;background-color: #2F516B;border-radius: 0;">Ranking and
+                            Awards</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Contact Us</a>
+        Copyright &copy; www.banasthali.com. All right reserved.
+    </nav>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
